@@ -7329,19 +7329,20 @@ a {
   border-width: .17rem;
   border-radius: .2rem;
   border: none;
-  font-size: .92rem;
+  font-size: .85rem;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 1rem 1.5rem; }
+  padding: 1rem 1.5rem;
+  margin-left: 1rem; }
   @media only screen and (min-width: 768px) {
     .btn, button {
       padding: 1 1.5rem; } }
   .btn:hover, button:hover {
     color: #FFF; }
   .btn:first-child, button:first-child {
-    margin-right: 1rem; }
+    margin-left: 0; }
   .btn.btn-ghost.btn-white, button.btn-ghost.btn-white {
     border: .17rem solid #f;
     background-color: transparent;
@@ -7413,7 +7414,8 @@ a {
     cursor: default;
     pointer-events: none; }
   .btn.btn-lg, .btn-group-lg > .btn, button.btn-lg, .btn-group-lg > button.btn {
-    padding: 1.25rem 1rem; }
+    padding: 1.25rem 1.5rem;
+    font-size: .928rem; }
   .btn.btn-sm, .btn-group-sm > .btn, button.btn-sm, .btn-group-sm > button.btn {
     padding: .5rem 1rem; }
   .btn.btn-with-icon, button.btn-with-icon {
@@ -7681,10 +7683,6 @@ input[type="radio"]:checked + label::after {
 * {
   box-sizing: border-box; }
 
-.wrapper {
-  width: 80%;
-  margin: 0 auto; }
-
 body {
   background-color: #FAFAFD; }
 
@@ -7749,6 +7747,7 @@ h1.page-title {
 .swatch__light {
   color: rgba(255, 255, 255, 0.5); }
 
+/* BUTTONS */
 /*TYPOGRAPHY *
 -----------------------------------------------*/
 p {

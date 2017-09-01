@@ -11,12 +11,13 @@ a {
   border-width: .17rem;
   border-radius: .2rem;
   border: none;
-  font-size: .92rem;
+  font-size: .85rem;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 1rem 1.5rem;
+  margin-left: 1rem;
   @media only screen and (min-width: #{map-get($grid-breakpoints, md)}) {
     padding: 1 ($spacer * 1.5);
   }
@@ -25,7 +26,7 @@ a {
   }
 
   &:first-child {
-    margin-right: 1rem;
+    margin-left: 0;
   }
 
   &.btn-ghost.btn-white {
@@ -125,7 +126,8 @@ a {
     pointer-events: none;
   }
   &.btn-lg {
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 1.5rem;
+    font-size: .928rem;
   }
   &.btn-sm {
     padding: .5rem 1rem;
