@@ -1,0 +1,193 @@
+
+/* YOUR FONT */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+
+/* YOUR STYLES */
+
+
+body { font-weight: 400; }
+/*h1,h2,h3,h4,h5,h6 {*/
+  /*color: $brand-primary;*/
+/*}*/
+$font-size-h1-base:             2.86rem;
+$font-size-h2-base:             2.42rem;
+$font-size-h3-base:             2rem;
+$font-size-h4-base:             1.57rem;
+$font-size-h5-base:             1.29rem;
+$font-size-h6-base:             0.92rem;
+
+$font-size-h1-sm:               3.5rem;
+$font-size-h2-sm:               2.9rem;
+$font-size-h3-sm:               2.25rem;
+$font-size-h4-sm:               1.75rem;
+$font-size-h5-sm:               1.4rem;
+$font-size-h6-sm:               0.92rem;
+
+$font-size-h1-lg:               5rem;
+$font-size-h2-lg:               3.285rem;
+$font-size-h3-lg:               2.57rem;
+$font-size-h4-lg:               2rem;
+$font-size-h5-lg:               1.57rem;
+$font-size-h6-lg:               0.92rem;
+
+h1, .h1, %h1,
+h2, .h2, %h2,
+h3, .h3, %h3,
+h4, .h4, %h4,
+h5, .h5, %h5,
+h6, .h6, %h6,
+{
+  font-weight: bold;
+}
+
+h1, .h1, %h1,
+h2, .h2, %h2,
+h3, .h3, %h3,
+h4, .h4, %h4,
+h5, .h5, %h5
+ {
+   line-height: 1.3;
+ }
+
+h1, .h1, %h1 {
+  margin-bottom: 1rem;
+  font-size: $font-size-h1-base;
+  font-weight: 600;
+}
+h2, .h2, %h2 {
+  margin-bottom: 1rem;
+  font-size: $font-size-h2-base;
+}
+h3, .h3, %h3 {
+  margin-bottom: .5rem;
+  font-size: $font-size-h3-base;
+  font-weight: 700;
+}
+h4, .h4, %h4 {
+  margin-bottom: 0.5rem;
+  font-size: $font-size-h4-base;
+  font-weight: 600;
+}
+h5, .h5, %h5 {
+  font-size: $font-size-h5-base;
+  line-height: 1.2rem;
+}
+h6, .h6, %h6 {
+  margin-bottom: 6px;
+  font-size: .92rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+p, .p, %p {
+  margin-bottom: 1.14rem;
+  font-size: 1.14rem;
+  line-height: 1.5;
+  &--large{
+    margin-bottom: 1.28rem;
+    font-size: 1.28rem ;
+  }
+  &--small{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: #{map-get($grid-breakpoints, sm)}) {
+  h1, .h1, %h1 {
+    font-size: $font-size-h1-sm;
+  }
+  h2, .h2, %h2 {
+    font-size: $font-size-h2-lg;
+  }
+  h3, .h3, %h3 {
+    font-size: $font-size-h3-lg;
+  }
+  h4, .h4, %h4 {
+    font-size: $font-size-h4-lg;
+  }
+  h5, .h5, %h5 {
+    font-size: $font-size-h5-lg;
+  }
+
+  p, .p, %p{
+    margin-bottom: 1.214rem;
+    font-size: 1.214rem;
+    &--large {
+      margin-bottom: 1.42rem;
+      font-size: 1.42rem;
+    }
+    &--small {
+      margin-bottom: 1.07rem;
+      font-size: 1.07rem;
+    }
+  }
+
+}
+
+@media only screen and (min-width: #{map-get($grid-breakpoints, lg)}) {
+  h1, .h1, %h1 {
+    font-size: $font-size-h1-lg;
+  }
+  h2, .h2, %h2 {
+    font-size: $font-size-h2-lg;
+  }
+  h3, .h3, %h3 {
+    font-size: $font-size-h3-lg;
+  }
+  h4, .h4, %h4 {
+    font-size: $font-size-h4-lg;
+  }
+  h5, .h5, %h5 {
+    font-size: $font-size-h5-lg;
+  }
+
+
+  p, .p, %p{
+    &--large {
+      margin-bottom: 1.57rem;
+      font-size: 1.57rem;
+    }
+  }
+
+
+
+}
+p strong {
+  font-weight: 700;
+}
+
+.u-uc {
+  text-transform: uppercase;
+}
+
+.u-text-bold {
+  font-weight: 700;
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.text-weight-light {
+  font-weight: 300;
+}
+.text-white {
+  color: $white;
+}
+.text-primary {
+  color: $brand-primary;
+}
+cite {
+  font-style: normal;
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,162 @@
+/*FORMS *
+-----------------------------------------------*/
+form {
+  margin-bottom: 1em;
+  max-width: 400px;
+  //margin: 0 auto;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.field-wrapper {
+  display: block;
+  position:relative;
+  margin-bottom: 0.25em;
+}
+
+::-webkit-input-placeholder {
+   color: $gray;
+}
+
+label.float-label {
+    position:absolute;
+    top:-13px;
+    left:0;
+    font-size:12px;
+    color: $gray;
+    opacity:0;
+    font-weight:bold;
+}
+
+label.float-label.on {
+  	color: $gray-dark;
+}
+
+label.float-label.show {
+    top: -15px;
+    opacity: 1;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .faux-file {
+  display: inline-block;
+  padding: 0 .4em 0 .4em;
+  padding: .5em;
+  vertical-align: middle;
+  min-width: 50px;
+  max-width: 550px;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .faux-file {
+  width: 100%;
+  min-height: 36px;
+  border: 1px solid $gray-lighter;
+  margin: 0 0 1em 0;
+
+   &:hover {
+    border: 1px solid $gray-dark;
+  }
+
+  &:focus {
+    border: 1px solid $primary;
+    outline: none;
+  }
+}
+
+input,
+textarea {
+  -webkit-appearance:none;
+  curser: pointer;
+}
+
+textarea{
+  	height: 150px;
+}
+
+input[type=submit] {
+    border: none;
+    cursor: pointer;
+}
+
+/*RADIO/CHECKBOX*/
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  color: $black;
+  font-size: 1em;
+  curser: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  position:absolute;
+  opacity:0;
+  curser: pointer;
+
+  &:hover, &:focus, &:hover + label, &:focus + label {
+    border-color: $gray;
+    color: $gray;
+  }
+
+  &:checked + label {
+    color: black;
+    position:relative;
+  }
+}
+
+input[type="radio"] + label::before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  margin-right: 0.125em;
+  position: relative;
+  top: 0.4em;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 2em;
+  border: 2px solid $gray-lighter;
+}
+
+input[type="checkbox"] + label::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 0.125em;
+  position: relative;
+  top: 0.25em;
+  display: inline-block;
+  background-color: $gray-lighter;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: '✔';
+  	display: block;
+  	position: absolute;
+  	top: 0;
+  	left: 4px;
+  	width: 10px;
+  	height: 10px;
+  	color: #fff;
+}
+
+input[type="radio"]:checked + label::before {
+  border-color: $gray;
+}
+
+input[type="radio"]:checked + label::after {
+  content: '';
+  width: .75em;
+  height: .75em;
+  position: absolute;
+  top: .35em;
+  left:.4em;
+  display: inline-block;
+  background-color: $gray-light;
+  border-radius: 2em;
+}

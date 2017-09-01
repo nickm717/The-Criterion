@@ -1,0 +1,68 @@
+/* COLORS */
+
+.colors li {
+  display: inline-block;
+  height: 100px;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  padding-top: 1.5em;
+  border-radius: 4px;
+  vertical-align: middle;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  transition: all 0.2s;
+  &:hover{
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
+    transform: translateY(-1px);
+  }
+}
+
+.swatch {
+  color: fade-out($black, .5)
+}
+
+.swatch__light{
+  color: fade-out($white, .5)
+}
+
+.c-primary {
+  background-color: $brand-primary;
+}
+
+.c-secondary {
+  background-color: $brand-secondary;
+}
+
+.c-white {
+  background-color: $white;
+}
+
+.c-red {
+  background-color: $red;
+}
+
+.c-neutral-90 {
+  background-color: $neutral-90;
+}
+
+.c-neutral-80 {
+  background-color: $neutral-80;
+}
+
+.c-neutral-60 {
+  background-color: $neutral-60;
+}
+
+.c-neutral-30 {
+  background-color: $neutral-30;
+}
+
+.c-neutral-20 {
+  background-color: $neutral-20;
+}
+
+.c-neutral-10 {
+  background-color: $neutral-10;
+}

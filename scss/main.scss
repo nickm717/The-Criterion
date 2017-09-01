@@ -1,0 +1,207 @@
+/*GLOBAL *
+-----------------------------------------------*/
+
+@import "variables";
+@import "bootstrap/bootstrap";
+@import "_grid-extensions";
+@import "typography";
+@import "buttons";
+@import "colors";
+@import "forms";
+@import "icons";
+
+
+
+/* PAGE LAYOUT *
+-----------------------------------------------*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: $neutral-05;
+}
+
+
+
+h1.page-title {
+  font-size: 2.75em;
+
+  small {
+    font-size: .5em;
+    font-weight: normal;
+    color: $gray;
+  }
+}
+
+.pattern {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.pattern-head {
+  margin: 2em 0;
+  font-family: "Inconsolata", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1em 0;
+  color: $gray-light;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.colors {
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+/*LIBRARY FONTS *
+-----------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+}
+
+.primary-font {
+  font-family: "sofia-pro", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.secondary-font {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.number-font {
+  font-family: 'Source Code Pro', monospace;
+}
+
+
+/* COLOR SWATCHES */
+
+.colors li {
+  display: inline-block;
+  height: 100px;
+  width: 150px;
+  margin: 0 1rem 1rem 0;
+  padding-top: 1.5em;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  transition: all 0.2s;
+  &:hover{
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
+    transform: translateY(-1px);
+  }
+}
+
+.swatch {
+  color: fade-out($black, .5)
+}
+
+.swatch__light{
+  color: fade-out($white, .5)
+}
+
+
+/*TYPOGRAPHY *
+-----------------------------------------------*/
+p {
+  margin: 0 0 1em 0;
+}
+
+.big {
+  font-size: 1.25em;
+}
+
+.meta {
+  font-size: 80%;
+}
+
+/*ELEMENTS *
+-----------------------------------------------*/
+.border-radius {
+  border-radius: 3px;
+}
+
+.transition {
+  	transition: all ease-out 300ms;
+}
+
+hr {
+  border: none;
+  border-bottom: 3px solid $gray-lightest;
+}
+
+hr.big {
+  border: none;
+  border-bottom: 10px solid $gray-lightest;
+}
+
+
+
+/*PAGINATION *
+-----------------------------------------------*/
+ul.page-numbers {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination .page-numbers li {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.pagination a,
+.pagination span {
+  color: $white;
+  background: $gray;
+  display: inline-block;
+  text-align: center;
+  padding: 1px;
+  width: 24px;
+  height: 24px;
+}
+
+.pagination span.current,
+.pagination .active_page {
+  background: $red;
+}
+
+.pagination a:hover,
+.page_navigation a:hover {
+  background: $gray-light;
+}
+
+/*BACKGROUNDS *
+-----------------------------------------------*/
+[class*='bg-'] {
+  padding: 2em;
+}
+
+.bg-red {
+  background: $red;
+  color: $white;
+}
+
+.bg-black {
+  background: $black;
+  color: $white;
+}
+
+.bg-gray {
+  background: $gray-lightest;
+}
