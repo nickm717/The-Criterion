@@ -5,6 +5,7 @@
 @import "bootstrap/bootstrap";
 @import "_grid-extensions";
 @import "typography";
+@import "components";
 @import "buttons";
 @import "colors";
 @import "forms";
@@ -96,11 +97,11 @@ body {
   text-align: center;
   border-radius: 4px;
   position: relative;
-  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,.12);
   transition: all 0.2s;
   &:hover{
-    box-shadow: 0 8px 30px rgba(0,0,0,.08);
-    transform: translateY(-1px);
+    box-shadow: 0 8px 30px rgba(0,0,0,.1);
+    transform: translateY(-3px);
   }
 }
 
@@ -114,9 +115,7 @@ body {
 
 
 /* BUTTONS */
-.button-group {
-  
-}
+
 
 /*TYPOGRAPHY *
 -----------------------------------------------*/
@@ -130,6 +129,26 @@ p {
 
 .meta {
   font-size: 80%;
+}
+
+.font__color{
+
+  &--white{
+    color: $white;
+  }
+
+  &--black{
+    color: $black;
+  }
+
+  &--primary{
+    color: $brand-primary;
+  }
+
+  &--secondary{
+    color: $brand-secondary;
+  }
+
 }
 
 /*ELEMENTS *
